@@ -14,6 +14,7 @@
 		01F0CAC320858DEC009EC417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F0CAC120858DEC009EC417 /* LaunchScreen.storyboard */; };
 		01F0CACE20858DEC009EC417 /* tictocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0CACD20858DEC009EC417 /* tictocTests.swift */; };
 		01F0CAD920858DEC009EC417 /* tictocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0CAD820858DEC009EC417 /* tictocUITests.swift */; };
+		70342CD92088302D00F6A8C0 /* tictoc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70342CD72088302D00F6A8C0 /* tictoc.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		01F0CAD420858DEC009EC417 /* tictocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tictocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F0CAD820858DEC009EC417 /* tictocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictocUITests.swift; sourceTree = "<group>"; };
 		01F0CADA20858DEC009EC417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70342CD82088302D00F6A8C0 /* tictoc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tictoc.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				01F0CABF20858DEC009EC417 /* Assets.xcassets */,
 				01F0CAC120858DEC009EC417 /* LaunchScreen.storyboard */,
 				01F0CAC420858DEC009EC417 /* Info.plist */,
+				70342CD72088302D00F6A8C0 /* tictoc.xcdatamodeld */,
 			);
 			path = tictoc;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				01F0CABB20858DEC009EC417 /* ViewController.swift in Sources */,
 				01F0CAB920858DEC009EC417 /* AppDelegate.swift in Sources */,
+				70342CD92088302D00F6A8C0 /* tictoc.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +556,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		70342CD72088302D00F6A8C0 /* tictoc.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				70342CD82088302D00F6A8C0 /* tictoc.xcdatamodel */,
+			);
+			currentVersion = 70342CD82088302D00F6A8C0 /* tictoc.xcdatamodel */;
+			path = tictoc.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 01F0CAAD20858DEC009EC417 /* Project object */;
 }
