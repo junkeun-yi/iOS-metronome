@@ -15,6 +15,8 @@
 		01F0CACE20858DEC009EC417 /* tictocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0CACD20858DEC009EC417 /* tictocTests.swift */; };
 		01F0CAD920858DEC009EC417 /* tictocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0CAD820858DEC009EC417 /* tictocUITests.swift */; };
 		70342CD92088302D00F6A8C0 /* tictoc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70342CD72088302D00F6A8C0 /* tictoc.xcdatamodeld */; };
+		70342CDC2088313C00F6A8C0 /* Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342CDB2088313C00F6A8C0 /* Save.swift */; };
+		70342CDE20883F2100F6A8C0 /* ConstantsAndRefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342CDD20883F2100F6A8C0 /* ConstantsAndRefs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		01F0CAD820858DEC009EC417 /* tictocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictocUITests.swift; sourceTree = "<group>"; };
 		01F0CADA20858DEC009EC417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70342CD82088302D00F6A8C0 /* tictoc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tictoc.xcdatamodel; sourceTree = "<group>"; };
+		70342CDB2088313C00F6A8C0 /* Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Save.swift; sourceTree = "<group>"; };
+		70342CDD20883F2100F6A8C0 /* ConstantsAndRefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsAndRefs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		01F0CAB720858DEC009EC417 /* tictoc */ = {
 			isa = PBXGroup;
 			children = (
+				70342CDA208830FC00F6A8C0 /* New Group */,
 				01F0CAB820858DEC009EC417 /* AppDelegate.swift */,
 				01F0CABA20858DEC009EC417 /* ViewController.swift */,
 				01F0CABC20858DEC009EC417 /* Main.storyboard */,
@@ -126,6 +131,15 @@
 				01F0CADA20858DEC009EC417 /* Info.plist */,
 			);
 			path = tictocUITests;
+			sourceTree = "<group>";
+		};
+		70342CDA208830FC00F6A8C0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				70342CDB2088313C00F6A8C0 /* Save.swift */,
+				70342CDD20883F2100F6A8C0 /* ConstantsAndRefs.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70342CDC2088313C00F6A8C0 /* Save.swift in Sources */,
 				01F0CABB20858DEC009EC417 /* ViewController.swift in Sources */,
 				01F0CAB920858DEC009EC417 /* AppDelegate.swift in Sources */,
 				70342CD92088302D00F6A8C0 /* tictoc.xcdatamodeld in Sources */,
+				70342CDE20883F2100F6A8C0 /* ConstantsAndRefs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
