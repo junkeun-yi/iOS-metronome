@@ -8,6 +8,11 @@
 
 import Foundation
 
+var saveFiles: [SaveFile] = []
+
+
+
+
 func delayX(time: Double, closure:@escaping ()->()) {
     DispatchQueue.main.asyncAfter(deadline: .now() + time) {
         closure()

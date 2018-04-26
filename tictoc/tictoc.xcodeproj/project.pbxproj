@@ -21,6 +21,7 @@
 		705C6CB5208E8149003F44C2 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C6CB4208E8149003F44C2 /* AudioPlayer.swift */; };
 		705C6CB7208E8435003F44C2 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C6CB6208E8435003F44C2 /* StartScreenViewController.swift */; };
 		705C6CBA208E8488003F44C2 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C6CB9208E8488003F44C2 /* MetronomeViewController.swift */; };
+		7063A5362091716B00AFCAC3 /* SaveFilePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7063A5352091716B00AFCAC3 /* SaveFilePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		705C6CB4208E8149003F44C2 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		705C6CB6208E8435003F44C2 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		705C6CB9208E8488003F44C2 /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
+		7063A5352091716B00AFCAC3 /* SaveFilePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFilePickerViewController.swift; sourceTree = "<group>"; };
 		70980C13208EBBE500AAB12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 		01F0CAB720858DEC009EC417 /* tictoc */ = {
 			isa = PBXGroup;
 			children = (
+				01F0CAB820858DEC009EC417 /* AppDelegate.swift */,
 				705C6CB3208E811C003F44C2 /* Other */,
 				70342CDA208830FC00F6A8C0 /* Models */,
 				70342CDD20883F2100F6A8C0 /* ConstantsAndRefs.swift */,
@@ -154,7 +157,6 @@
 		705C6CB3208E811C003F44C2 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				01F0CAB820858DEC009EC417 /* AppDelegate.swift */,
 				01F0CAC120858DEC009EC417 /* LaunchScreen.storyboard */,
 			);
 			path = Other;
@@ -166,6 +168,7 @@
 				705C6CB6208E8435003F44C2 /* StartScreenViewController.swift */,
 				01F0CABA20858DEC009EC417 /* ViewController.swift */,
 				705C6CB9208E8488003F44C2 /* MetronomeViewController.swift */,
+				7063A5352091716B00AFCAC3 /* SaveFilePickerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				01F0CABB20858DEC009EC417 /* ViewController.swift in Sources */,
 				01F0CAB920858DEC009EC417 /* AppDelegate.swift in Sources */,
 				70342CD92088302D00F6A8C0 /* tictoc.xcdatamodeld in Sources */,
+				7063A5362091716B00AFCAC3 /* SaveFilePickerViewController.swift in Sources */,
 				705C6CBA208E8488003F44C2 /* MetronomeViewController.swift in Sources */,
 				70342CDE20883F2100F6A8C0 /* ConstantsAndRefs.swift in Sources */,
 				705C6CB5208E8149003F44C2 /* AudioPlayer.swift in Sources */,
