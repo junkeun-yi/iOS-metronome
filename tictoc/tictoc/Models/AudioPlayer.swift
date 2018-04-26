@@ -22,9 +22,9 @@ class AudioPlayer {
     var tapTrack: [NSDate] = []
     
     var bpm: TimeInterval?
-    var divisor: Int8?
+    var divisor: Int16?
     
-    var cnt: Int8 = 1
+    var cnt: Int16 = 1
     let sampleNum: Int = 2
     
     var soundOn: Bool = false
@@ -43,7 +43,7 @@ class AudioPlayer {
         }
     }
     
-    func playRepeat(forBPM beat: Int16, forDivisor divis: Int8) {
+    func playRepeat(forBPM beat: Int16, forDivisor divis: Int16) {
         bpm = (1 / (Double(beat) / 60.0))
         divisor = divis
         timer = Timer.scheduledTimer(timeInterval: bpm!, target: self, selector: #selector(playSound), userInfo: nil, repeats: true)

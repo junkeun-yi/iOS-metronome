@@ -44,7 +44,7 @@ class MetronomeViewController: UIViewController {
     
     @IBAction func pressedPlay(_ sender: UIButton) {
         if (!(met?.isPlaying())!) {
-            met?.playRepeat(forBPM: Int16(bpmSetter.value), forDivisor: Int8(Int(measureSetter.value)))
+            met?.playRepeat(forBPM: Int16(bpmSetter.value), forDivisor: Int16(Int(measureSetter.value)))
         }
     }
     
@@ -64,7 +64,7 @@ class MetronomeViewController: UIViewController {
         bpmLabel.text = String(Int(bpmSetter.value))
         if (met?.isPlaying())! {
             met?.stopSound()
-            met?.playRepeat(forBPM: Int16(bpmSetter.value), forDivisor: Int8(Int(measureSetter.value)))
+            met?.playRepeat(forBPM: Int16(bpmSetter.value), forDivisor: Int16(Int(measureSetter.value)))
         }
     }
     
@@ -75,7 +75,7 @@ class MetronomeViewController: UIViewController {
         measureLabel.text = String(Int(measureSetter.value))
         if (met?.isPlaying())! {
             met?.stopSound()
-            met?.playRepeat(forBPM: Int16(bpmSetter.value), forDivisor: Int8(Int(measureSetter.value)))
+            met?.playRepeat(forBPM: Int16(bpmSetter.value), forDivisor: Int16(Int(measureSetter.value)))
         }
     }
     
