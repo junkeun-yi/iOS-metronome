@@ -52,11 +52,14 @@ class AudioPlayer {
     }
 
     @objc func playSound() {
-        if cnt != divisor {
+        if cnt < divisor! {
             ticPlayer?.play()
             cnt += 1
-        } else {
+        } else if cnt == divisor {
             tocPlayer?.play()
+            cnt = 1
+        } else {
+            ticPlayer?.play()
             cnt = 1
         }
     }
