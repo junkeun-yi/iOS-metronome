@@ -83,7 +83,7 @@ class MetronomeViewController: UIViewController {
     @IBOutlet weak var beatTrackerLabel: UILabel!
     @IBAction func pressedTracker(_ sender: UIButton) {
         met?.track(atHitTime: NSDate())
-        if let beat = met?.retreiveBeat() {
+        if let beat = met?.retreiveBeat2() {
             beatTrackerLabel.text = String(beat)
         } else {
             beatTrackerLabel.text = "tap!"

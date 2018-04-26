@@ -20,6 +20,7 @@ class AudioPlayer {
     
     var tapTime: NSDate = NSDate()
     var tapTrack: [NSDate] = []
+    var tapTrack2: NSDate?
     
     var bpm: TimeInterval?
     var divisor: Int8?
@@ -97,7 +98,19 @@ class AudioPlayer {
         }
     }
     
-    
+    func retreiveBeat2() -> Double? {
+        if tapTrack2==nil {
+            tapTrack2 = NSDate()
+            return 0.0
+        }
+        else {
+            let currentTap: NSDate = NSDate()
+            let difference = tapTrack2?.timeIntervalSince(currentTap as Date)
+            tapTrack2 = currentTap
+            return ((1.0/difference!)*(-60.0)).rounded()
+
+        }
+    }
 
     
     
