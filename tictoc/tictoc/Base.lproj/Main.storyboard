@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m1v-Pn-gAq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="meP-bj-iy0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="-844" y="-314.39280359820094"/>
         </scene>
-        <!--View Controller-->
+        <!--Metronome View Controller-->
         <scene sceneID="Cw0-aB-uQu">
             <objects>
-                <viewController id="meP-bj-iy0" sceneMemberID="viewController">
+                <viewController id="meP-bj-iy0" customClass="MetronomeViewController" customModule="tictoc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8AF-Rd-rxw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,6 +86,9 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="PbG-lP-0zF">
                                 <rect key="frame" x="265" y="137" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changedBPM:" destination="meP-bj-iy0" eventType="valueChanged" id="G18-DI-z5t"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="myMeasure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slt-br-lWW">
                                 <rect key="frame" x="16" y="257" width="201" height="99"/>
@@ -106,6 +109,9 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1vN-cs-vkT">
                                 <rect key="frame" x="265" y="292" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changedMeasure:" destination="meP-bj-iy0" eventType="valueChanged" id="LzW-y3-eJI"/>
+                                </connections>
                             </stepper>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPk-7v-QUb">
                                 <rect key="frame" x="265" y="433" width="94" height="30"/>
@@ -115,23 +121,39 @@
                                 <state key="normal" title="TAP">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressedTracker:" destination="meP-bj-iy0" eventType="touchUpInside" id="1pH-3o-0hw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ls0-SG-YSU">
                                 <rect key="frame" x="98" y="580" width="78" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.75824140370000004" green="0.82006421659999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="PLAY"/>
+                                <connections>
+                                    <action selector="pressedPlay:" destination="meP-bj-iy0" eventType="touchUpInside" id="crS-bV-hEx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXN-Mk-dwF">
                                 <rect key="frame" x="184" y="580" width="71" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.64893805329999998" blue="0.73226716739999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="STOP"/>
+                                <connections>
+                                    <action selector="pressedStop:" destination="meP-bj-iy0" eventType="touchUpInside" id="dAl-GD-LWk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mEw-Ir-WyJ"/>
                     </view>
+                    <connections>
+                        <outlet property="beatTrackerLabel" destination="aeB-X0-0Gy" id="A9F-fm-dEf"/>
+                        <outlet property="bpmLabel" destination="lEC-mq-uiD" id="204-LW-ZAm"/>
+                        <outlet property="bpmSetter" destination="PbG-lP-0zF" id="gmv-G5-Cdh"/>
+                        <outlet property="measureLabel" destination="Slt-br-lWW" id="pI3-iv-3lb"/>
+                        <outlet property="measureSetter" destination="1vN-cs-vkT" id="Xqm-Uz-DtI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXs-Tz-tjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

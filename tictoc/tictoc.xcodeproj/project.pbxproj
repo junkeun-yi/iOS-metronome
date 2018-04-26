@@ -17,6 +17,10 @@
 		70342CD92088302D00F6A8C0 /* tictoc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70342CD72088302D00F6A8C0 /* tictoc.xcdatamodeld */; };
 		70342CDC2088313C00F6A8C0 /* Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342CDB2088313C00F6A8C0 /* Save.swift */; };
 		70342CDE20883F2100F6A8C0 /* ConstantsAndRefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342CDD20883F2100F6A8C0 /* ConstantsAndRefs.swift */; };
+		705C6CB2208E805B003F44C2 /* Audio_Files in Resources */ = {isa = PBXBuildFile; fileRef = 705C6CB1208E805B003F44C2 /* Audio_Files */; };
+		705C6CB5208E8149003F44C2 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C6CB4208E8149003F44C2 /* AudioPlayer.swift */; };
+		705C6CB7208E8435003F44C2 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C6CB6208E8435003F44C2 /* StartScreenViewController.swift */; };
+		705C6CBA208E8488003F44C2 /* MetronomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C6CB9208E8488003F44C2 /* MetronomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +47,6 @@
 		01F0CABD20858DEC009EC417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01F0CABF20858DEC009EC417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01F0CAC220858DEC009EC417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		01F0CAC420858DEC009EC417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01F0CAC920858DEC009EC417 /* tictocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tictocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F0CACD20858DEC009EC417 /* tictocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictocTests.swift; sourceTree = "<group>"; };
 		01F0CACF20858DEC009EC417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +56,11 @@
 		70342CD82088302D00F6A8C0 /* tictoc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tictoc.xcdatamodel; sourceTree = "<group>"; };
 		70342CDB2088313C00F6A8C0 /* Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Save.swift; sourceTree = "<group>"; };
 		70342CDD20883F2100F6A8C0 /* ConstantsAndRefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsAndRefs.swift; sourceTree = "<group>"; };
+		705C6CB1208E805B003F44C2 /* Audio_Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio_Files; sourceTree = "<group>"; };
+		705C6CB4208E8149003F44C2 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		705C6CB6208E8435003F44C2 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		705C6CB9208E8488003F44C2 /* MetronomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewController.swift; sourceTree = "<group>"; };
+		70980C13208EBBE500AAB12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +111,15 @@
 		01F0CAB720858DEC009EC417 /* tictoc */ = {
 			isa = PBXGroup;
 			children = (
-				70342CDA208830FC00F6A8C0 /* New Group */,
-				01F0CAB820858DEC009EC417 /* AppDelegate.swift */,
-				01F0CABA20858DEC009EC417 /* ViewController.swift */,
+				705C6CB3208E811C003F44C2 /* Other */,
+				70342CDA208830FC00F6A8C0 /* Models */,
+				70342CDD20883F2100F6A8C0 /* ConstantsAndRefs.swift */,
 				01F0CABC20858DEC009EC417 /* Main.storyboard */,
+				705C6CB8208E8440003F44C2 /* ViewControllers */,
 				01F0CABF20858DEC009EC417 /* Assets.xcassets */,
-				01F0CAC120858DEC009EC417 /* LaunchScreen.storyboard */,
-				01F0CAC420858DEC009EC417 /* Info.plist */,
 				70342CD72088302D00F6A8C0 /* tictoc.xcdatamodeld */,
+				70980C13208EBBE500AAB12D /* Info.plist */,
+				705C6CB1208E805B003F44C2 /* Audio_Files */,
 			);
 			path = tictoc;
 			sourceTree = "<group>";
@@ -133,13 +142,32 @@
 			path = tictocUITests;
 			sourceTree = "<group>";
 		};
-		70342CDA208830FC00F6A8C0 /* New Group */ = {
+		70342CDA208830FC00F6A8C0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				70342CDB2088313C00F6A8C0 /* Save.swift */,
-				70342CDD20883F2100F6A8C0 /* ConstantsAndRefs.swift */,
+				705C6CB4208E8149003F44C2 /* AudioPlayer.swift */,
 			);
-			path = "New Group";
+			path = Models;
+			sourceTree = "<group>";
+		};
+		705C6CB3208E811C003F44C2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				01F0CAB820858DEC009EC417 /* AppDelegate.swift */,
+				01F0CAC120858DEC009EC417 /* LaunchScreen.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		705C6CB8208E8440003F44C2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				705C6CB6208E8435003F44C2 /* StartScreenViewController.swift */,
+				01F0CABA20858DEC009EC417 /* ViewController.swift */,
+				705C6CB9208E8488003F44C2 /* MetronomeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705C6CB2208E805B003F44C2 /* Audio_Files in Resources */,
 				01F0CAC320858DEC009EC417 /* LaunchScreen.storyboard in Resources */,
 				01F0CAC020858DEC009EC417 /* Assets.xcassets in Resources */,
 				01F0CABE20858DEC009EC417 /* Main.storyboard in Resources */,
@@ -276,11 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705C6CB7208E8435003F44C2 /* StartScreenViewController.swift in Sources */,
 				70342CDC2088313C00F6A8C0 /* Save.swift in Sources */,
 				01F0CABB20858DEC009EC417 /* ViewController.swift in Sources */,
 				01F0CAB920858DEC009EC417 /* AppDelegate.swift in Sources */,
 				70342CD92088302D00F6A8C0 /* tictoc.xcdatamodeld in Sources */,
+				705C6CBA208E8488003F44C2 /* MetronomeViewController.swift in Sources */,
 				70342CDE20883F2100F6A8C0 /* ConstantsAndRefs.swift in Sources */,
+				705C6CB5208E8149003F44C2 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25USQTHBUH;
 				INFOPLIST_FILE = tictoc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-junkeun-yi-iOS-metronome.tictoc";
@@ -461,6 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25USQTHBUH;
 				INFOPLIST_FILE = tictoc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-junkeun-yi-iOS-metronome.tictoc";

@@ -8,10 +8,8 @@
 
 import Foundation
 
-func delay(time: Double, closure:()->()) {
-    
-    DispatchQueue.main.after(when: .now() + time) {
+func delayX(time: Double, closure:@escaping ()->()) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + time) {
         closure()
     }
-    
 }
