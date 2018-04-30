@@ -18,14 +18,15 @@ class AudioPlayer {
     let tocPlayer: AVAudioPlayer?
     var timer: Timer?
     
-    var tapTime: NSDate = NSDate()
-    var tapTrack: [NSDate] = []
+    // var tapTime: NSDate = NSDate()
+    // var tapTrack: [NSDate] = []
+    // let sampleNum: Int = 2
+    var tapTrack2: NSDate?
     
     var bpm: TimeInterval?
     var divisor: Int16?
     
     var cnt: Int16 = 1
-    let sampleNum: Int = 2
     
     var soundOn: Bool = false
     
@@ -76,33 +77,46 @@ class AudioPlayer {
     }
     
     
-    //tracks each tap to do things
-    func track(atHitTime time: NSDate) {
-        if (tapTrack.count > 0) {
-            if (NSDate().timeIntervalSince(tapTrack[tapTrack.count - 1] as Date) > 5.0) {
-                tapTrack = []
+    func retreiveBeat2() -> Double? {
+        if tapTrack2==nil {
+                tapTrack2 = NSDate()
+                return 0.0
             }
-        }
-        tapTrack.append(time)
-    }
+        else {
+                let currentTap: NSDate = NSDate()
+                let difference = tapTrack2?.timeIntervalSince(currentTap as Date)
+                tapTrack2 = currentTap
+                return ((1.0/difference!)*(-60.0)).rounded()
     
-    func retreiveBeat() -> Double? {
-        if tapTrack.count < sampleNum {
-            return nil
-        } else {
-            var sum = 0.0
-            var found = 0.0
-            for i in (tapTrack.count - sampleNum - 1)..<(tapTrack.count) {
-                found = Double(tapTrack[i].timeIntervalSince(tapTrack[i - 1] as Date))
-                sum += found
             }
-            return (1.0 / (sum / Double(sampleNum))) * 60.0
-        }
     }
-    
     
 
-    
+    /**
+     //tracks each tap to do things
+     func track(atHitTime time: NSDate) {
+     if (tapTrack.count > 0) {
+     if (NSDate().timeIntervalSince(tapTrack[tapTrack.count - 1] as Date) > 5.0) {
+     tapTrack = []
+     }
+     }
+     tapTrack.append(time)
+     }
+     
+     func retreiveBeat() -> Double? {
+     if tapTrack.count < sampleNum {
+     return nil
+     } else {
+     var sum = 0.0
+     var found = 0.0
+     for i in (tapTrack.count - sampleNum - 1)..<(tapTrack.count) {
+     found = Double(tapTrack[i].timeIntervalSince(tapTrack[i - 1] as Date))
+     sum += found
+     }
+     return (1.0 / (sum / Double(sampleNum))) * 60.0
+     }
+     }
+     */
     
     
 }

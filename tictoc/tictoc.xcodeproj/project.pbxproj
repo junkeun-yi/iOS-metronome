@@ -15,7 +15,6 @@
 		01F0CACE20858DEC009EC417 /* tictocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0CACD20858DEC009EC417 /* tictocTests.swift */; };
 		01F0CAD920858DEC009EC417 /* tictocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0CAD820858DEC009EC417 /* tictocUITests.swift */; };
 		70342CD92088302D00F6A8C0 /* tictoc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70342CD72088302D00F6A8C0 /* tictoc.xcdatamodeld */; };
-		70342CDC2088313C00F6A8C0 /* Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342CDB2088313C00F6A8C0 /* Save.swift */; };
 		70342CDE20883F2100F6A8C0 /* ConstantsAndRefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70342CDD20883F2100F6A8C0 /* ConstantsAndRefs.swift */; };
 		705C6CB2208E805B003F44C2 /* Audio_Files in Resources */ = {isa = PBXBuildFile; fileRef = 705C6CB1208E805B003F44C2 /* Audio_Files */; };
 		705C6CB5208E8149003F44C2 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705C6CB4208E8149003F44C2 /* AudioPlayer.swift */; };
@@ -55,7 +54,6 @@
 		01F0CAD820858DEC009EC417 /* tictocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tictocUITests.swift; sourceTree = "<group>"; };
 		01F0CADA20858DEC009EC417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70342CD82088302D00F6A8C0 /* tictoc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tictoc.xcdatamodel; sourceTree = "<group>"; };
-		70342CDB2088313C00F6A8C0 /* Save.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Save.swift; sourceTree = "<group>"; };
 		70342CDD20883F2100F6A8C0 /* ConstantsAndRefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsAndRefs.swift; sourceTree = "<group>"; };
 		705C6CB1208E805B003F44C2 /* Audio_Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio_Files; sourceTree = "<group>"; };
 		705C6CB4208E8149003F44C2 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 		70342CDA208830FC00F6A8C0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				70342CDB2088313C00F6A8C0 /* Save.swift */,
 				705C6CB4208E8149003F44C2 /* AudioPlayer.swift */,
 			);
 			path = Models;
@@ -309,7 +306,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				705C6CB7208E8435003F44C2 /* StartScreenViewController.swift in Sources */,
-				70342CDC2088313C00F6A8C0 /* Save.swift in Sources */,
 				01F0CABB20858DEC009EC417 /* ViewController.swift in Sources */,
 				01F0CAB920858DEC009EC417 /* AppDelegate.swift in Sources */,
 				70342CD92088302D00F6A8C0 /* tictoc.xcdatamodeld in Sources */,
